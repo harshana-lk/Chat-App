@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="343.0" prefWidth="409.0" xmlns="http://javafx.com/javafx/19"
+            fx:controller="me.harshana.chatapp.client.controller.LoginFormController">
+    <ImageView fitHeight="84.0" fitWidth="81.0" layoutX="163.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../../../img/messenge-mainr.png"/>
+    </ImageView>
+    <Label layoutX="101.0" layoutY="110.0" text="Welcome to Messenger!">
+        <font>
+            <Font name="System Bold" size="18.0"/>
+        </font>
+    </Label>
+    <JFXTextField fx:id="txtUserName" focusColor="#008069" layoutX="96.0" layoutY="192.0" prefHeight="26.0"
+                  prefWidth="218.0" unFocusColor="#008069"/>
+    <Label layoutX="96.0" layoutY="175.0" text="Username :">
+        <font>
+            <Font name="Consolas Bold" size="13.0"/>
+        </font>
+    </Label>
+    <JFXButton fx:id="btnStartChat" layoutX="158.0" layoutY="263.0" onAction="#startChatOnAction"
+               ripplerFill="TRANSPARENT" style="-fx-border-radius: 35; -fx-border-color: #008069; -fx-border-width: 3;"
+               text="Start Chat" textFill="#008069">
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+        <font>
+            <Font name="System Bold" size="14.0"/>
+        </font>
+    </JFXButton>
+</AnchorPane>
